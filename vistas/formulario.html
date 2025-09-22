@@ -27,13 +27,56 @@
             <label for="">ingrese la contraseña</label>
             <input type="password" name="password" id="password">
         </div>
+        <!--Ingresamos la edad del estudiante-->
+        <div>
+            <label for="edad"> Ingrese la edad del estudiante</label>
+            <input type="number" name="edad" id="edad" maxlength="3" placeholder="Ingrese su edad" required>
+        </div>
+        <!--Ingresamos fecha de  nacimiento-->
+        <div>
+            <label for="fecha">ingrese la fecha de nacimiento<input type="date" name="fecha" id="fecha">
+            </label>
+        </div>
+        <!--select-->
+        <div>
+            <label for="">ingrese el color</label>
+            <select name="color" id="color">
+                <option value="azul">Amarillo</option>
+                <option value="rojo">Rojo</option>
+                <option value="verde">Verde</option>
+            </select>
+        </div>
+        <!--ingreso de una area de texto-->
+        <div>
+            <label for="comentario">
+                ingrese su comentario
+                <textarea name="comentario" id="comentario" rows="15" cols="100">
+                </textarea>
+            </label>
+            <div>
+                <label for="genero">seleccione el genero
+                    <input type="radio" name="genero" id="Masculino" value="Masculino">
+                    <label>Maculino</label>
+                    <input type="radio" name="genero" id="Femenino" value="Femanino">
+                    <label>Femanino</label>
+                    <input type="radio" name="genero" id="otro" value="otro">
+                    <label>Otros</label>
+                </label>
+            </div>
+        </div>
         <!--voy a crear un boton -->
         <div>
             <input type="submit" value="enviar formulario">
         </div>
+        <!--voy a crear un boton -->
+        <div>
+            <button type="reset"> Cancelar informacion</button>
+        </div>
+
     </form>
     <!--insertar una imagen-->
-    <img src="../img/good.jpeg" alt="Alan Arguello" width="400px" height="550px">
+    <img src="../img/good.jpeg" alt="Alan Arguello" width="150px" height="200px">
+    
 </body>
 
 </html>
