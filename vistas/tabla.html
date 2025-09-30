@@ -4,60 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <title>tablas</title>
+<!--style>
+        body {
+            margin: auto;
+            color: rgb(0,0,0);
+            background-color: rgb(139,16,16);
+        }
+
+        /*Aqui va un comentario
+        Dar estilos a una clase*/
+
+        .contenedor{
+            background: #ffffff;
+            color: rgb(110,116,230);
+        }
+
+        /Utilizamos el elemento ID/
+
+        #titulo{
+            color: blue;
+            text-align: center;
+            font-size: 15px;
+        }
+
+    </style-->
 </head>
 
 <body>
-    <h1>Tabla de posiciones campeonato ecuatoriano 2022</h1>
-    <div>
-        <table border="1px">
+    <div class="titulo-contenedor">
+    <h1 id="titulo">Tabla de posiciones campeonato ecuatoriano 2025 </h1>
+    </div>
+    <!--Creo una caja-->
+    <div class="contenedor1">
+        <h2>2</h2>
+    </div>
+    <div class="contenedor">
+        <table class="tabla">
             <thead>
                 <tr>
-                    <th >id equipo</th>
-                    <th>Nombre del equipo</th>
+                    <th>ID Equipo</th>
+                    <th>Nombre Equipo</th>
                     <th>Partidos jugados</th>
                     <th>Partidos ganados</th>
-                    <th> partidos perdidos</th>
                     <th>partidos perdidos</th>
+                    <th>Partidos empatados</th>
                     <th>Goles a favor</th>
                     <th>Goles en contra</th>
                     <th>Diferencia de goles</th>
                     <th>Puntos</th>
                 </tr>
             </thead>
-            <tbody>
+
+            <body>
                 <tr>
                     <td>1</td>
                     <td>Independiente</td>
-                    <td>18</td>
-                    <td>20</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>3</td>
-                    <td>-47</td>
-                    <td>13</td>
-
+                    <td>29</td>
+                    <td>19</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>55</td>
+                    <td>23</td>
+                    <td>32</td>
+                    <td>63</td>
                 </tr>
+
                 <tr>
                     <td>2</td>
-                    <td>Barcelona</td>
-                    <td>18</td>
-                    <td>20</td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>Barselons S.C</td>
+                    <td>29</td>
+                    <td>16</td>
+                    <td>8</td>
                     <td>5</td>
-                    <td>3</td>
-                    <td>-47</td>
+                    <td>45</td>
+                    <td>32</td>
                     <td>13</td>
+                    <td>53</td>
                 </tr>
-            </tbody>
+                    <tr>
+                    <td>2</td>
+                    <td>Barselons S.C</td>
+                    <td>29</td>
+                    <td>16</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>45</td>
+                    <td>32</td>
+                    <td>13</td>
+                    <td>53</td>
+                </tr>                 
+            </body>
             <tfoot>
 
             </tfoot>
         </table>
     </div>
-
+    <div class="contenedor2">
+        <a href="../index.html" >Ir a index</a>
+    </div>
+    
 </body>
 
 </html>

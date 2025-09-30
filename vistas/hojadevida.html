@@ -5,41 +5,145 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoja de Vida - Alan Arguello</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e6d89d;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            display: flex;
+            align-items: flex-start;
+            gap: 60px;
+        }
+
+        .columna-izquierda {
+            width: 30%;
+            background-color: #8f0c05f6;
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .columna-izquierda img {
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+            width: 180px;
+            height: 180px;
+            border: 3px solid white;
+        }
+
+        .columna-izquierda h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .columna-izquierda p,
+        .columna-izquierda a {
+            text-align: center;
+            margin: 10px 0;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .columna-izquierda ul {
+            font-size: 16px;
+            padding-left: 20px;
+        }
+
+        .caja-blanca {
+            background-color: white;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        .columna-derecha {
+            width: 65%;
+        }
+
+        .columna-derecha h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .columna-derecha h2 {
+            margin-top: 10px;
+        }
+
+        .seccion {
+            color: white;
+            background-color: #8f0c05f6;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+            border: 2px solid white;
+        }
+
+        .columna-derecha p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 15px 0;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        nav a {
+            background-color: #8f0c05f6;
+            border-radius: 15px;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
 </head>
 
-<body style="background-color: #e6d89d; margin: 0; padding: 20px; font-family: Arial, sans-serif;">
+<body>
 
-    <div style="display: flex; align-items: flex-start; gap: 60px;">
+    <div class="contenedor">
 
         <!-- Columna Izquierda -->
-        <div style="width: 30%; background-color: #8f0c05f6; border-radius: 15px; padding: 20px; color: white;">
+        <div class="columna-izquierda">
 
-            <img src="../img/alan.jpeg" alt="Alan Arguello" width="180px" height="180px"
-                style="border-radius: 50%; object-fit: cover; display: block; margin: 20px auto;" />
+            <img src="../img/alan.jpeg" alt="Alan Arguello" />
 
-            <h2 style="text-align: center; color: white;">Contacto</h2>
+            <h2>Contacto</h2>
 
-            <p style="text-align: center; margin: 10px 0;">
-                <a style="color: white; text-decoration: none;" href="https://wa.me/593987583989" target="_blank">
-                    WhatsApp: 0987583989
-                </a>
-            </p>
+            <a href="https://wa.me/593987583989" target="_blank">
+                WhatsApp: 0987583989
+            </a>
 
-            <p style="text-align: center; margin: 10px 0;">
-                <a style="color: white; text-decoration: none;" href="mailto:arguelloalan26@gmail.com">
-                    Correo: arguelloalan26@gmail.com
-                </a>
-            </p>
+            <a href="mailto:arguelloalan26@gmail.com">
+                Correo: arguelloalan26@gmail.com
+            </a>
 
-            <p style="text-align: center; margin: 10px 0;">
-                <a style="color: white; text-decoration: none;" href="https://maps.app.goo.gl/z2181ULPkitunahKA"
-                    target="_blank">
-                    Direccion: Amaru ñan y Quitumbe ñan
-                </a>
-            </p>
+            <a href="https://maps.app.goo.gl/z2181ULPkitunahKA" target="_blank">
+                Dirección: Amaru ñan y Quitumbe ñan
+            </a>
 
-            <h2 style="text-align: center; color: white;">Habilidades</h2>
-            <ul style="font-size: 16px; padding-left: 20px;">
+            <h2>Habilidades</h2>
+            <ul>
                 <li>Liderazgo</li>
                 <li>Comunicación asertiva</li>
                 <li>Creatividad</li>
@@ -47,42 +151,35 @@
                 <li>Trabajo en equipo</li>
             </ul>
 
-            <h2 style="text-align: center; color: white;">Educación</h2>
-
-            <div style="background-color: white; border-radius: 15px; padding: 10px; margin-bottom: 10px;">
-                <p style="text-align: center; color: black; margin: 0;">Bachillerato</p>
+            <h2>Educación</h2>
+            <div class="caja-blanca">
+                <p style="color: black; margin: 0;">Bachillerato</p>
             </div>
-            <p style="text-align: center; margin: 0;">Unidad Educativa Fiscal<br> "Benito Juárez"</p>
+            <p>Unidad Educativa Fiscal<br>"Benito Juárez"</p>
 
-            <div style="background-color: white; border-radius: 15px; padding: 10px; margin: 20px 0 10px 0;">
-                <p style="text-align: center; color: black; margin: 0;">Cursos</p>
+            <div class="caja-blanca">
+                <p style="color: black; margin: 0;">Cursos</p>
             </div>
-            <p style="text-align: center; margin: 0;">DCA y Sistemas</p>
+            <p>DCA y Sistemas</p>
         </div>
 
         <!-- Columna Derecha -->
-        <div style="width: 65%;">
+        <div class="columna-derecha">
 
-            <h1 style="font-size: 60px; margin: 0;">ALAN <br> ARGUELLO</h1>
-            <h2 style="margin-top: 10px;">Estudiante de Desarrollo de Software</h2>
+            <h1>ALAN <br> ARGUELLO</h1>
+            <h2>Estudiante de Desarrollo de Software</h2>
 
-            <h2
-                style="color: white; background-color: #8f0c05f6; border-radius: 15px; padding: 15px; text-align: center; margin-top: 30px;">
-                Acerca de mí
-            </h2>
-            <p style="font-size: 16px; line-height: 1.6; text-align: justify;">
+            <div class="seccion">Acerca de mí</div>
+            <p>
                 Soy una persona responsable, proactiva y comprometida con el desarrollo profesional. Me apasiona la
                 tecnología y busco constantemente mejorar mis habilidades en el área de desarrollo de software. Me
                 adapto fácilmente al trabajo en equipo y siempre estoy dispuesto a aprender.
             </p>
 
-            <h2
-                style="color: white; background-color: #8f0c05f6; border-radius: 15px; padding: 15px; text-align: center; ">
-                Experiencia Laboral
-            </h2>
+            <div class="seccion">Experiencia Laboral</div>
 
             <h3 style="margin-bottom: 5px;">Pasantías - Municipio Eloy Alfaro</h3>
-            <p style="font-size: 16px; line-height: 1.6; text-align: justify;">
+            <p>
                 Durante mis pasantías en el área de Recursos Humanos, realicé tareas como justificaciones de asistencia,
                 recepción y validación de solicitudes de pasantes, control del horario laboral, y apoyo en la gestión
                 del personal. Esta experiencia me permitió fortalecer mis habilidades organizativas y de comunicación
@@ -90,13 +187,13 @@
             </p>
         </div>
     </div>
+
+    <!-- Navegación -->
     <header>
-        <nav style="text-align: center;">
-            <a style="text-align: center;background-color: #8f0c05f6; border-radius: 15px; padding: 10px; color: white; text-decoration: none;"
-                href="../index.html">Ir al inicio</a>
+        <nav>
+            <a href="../index.html">Ir al inicio</a>
         </nav>
     </header>
-
 
 </body>
 
